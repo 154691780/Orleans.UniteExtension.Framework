@@ -1,0 +1,27 @@
+﻿
+作者: 蓝调大仙(blueghost.chn)
+
+联系: blueghost.chn@qq.com
+
+/*********************************
+
+
+项目细节:
+
+	1. 安装程序集
+
+/*********************************
+
+
+项目描述:
+
+	1. 文件夹描述
+
+		ExtendedAttribute (扩展特性标签文件夹)
+
+		ExampleProviders (实例供应商文件夹)
+
+		CommonlyUsedEnum (常用枚举文件夹)
+
+
+

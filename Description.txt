@@ -1,0 +1,33 @@
+Orleans.UniteExtension.Framework解决方案说明文档
+
+作者: 蓝调大仙(blueghost.chn)
+
+联系: blueghost.chn@qq.com
+
+/*********************************
+
+解决方案描述:
+
+	1. 文件夹描述
+
+		Documents (放置说明文档)
+
+		OrleansMiddleware (Orleans中间件项目)
+
+		OrleansService (Orleans主机服务项目)
+
+		ORMImplement (ORM实施项目)
+
+		OwinImplement (Owin实施项目)
+
+		ReferenceFiles (引用到的文件)
+
+		SwaggerImplement (Swagger实施项目)
+
+		UnifiedData (统一数据项目)
+
+		UnifiedToolkit (统一帮助项目)
+			|- CommonlyUsed.Toolkit.csproj [常用工具项目]
+
+
+/*********************************

@@ -1,0 +1,32 @@
+﻿
+作者: 蓝调大仙(blueghost.chn)
+
+联系: blueghost.chn@qq.com
+
+/*********************************
+
+
+项目细节:
+
+	1. 安装程序集
+		Install-Package Dos.ORM -Version 1.10.7.3
+		Install-Package Microsoft.Orleans.OrleansCodeGenerator.Build -Version 1.5.2
+		Install-Package RedisStorage -Version 1.0.15
+
+/*********************************
+
+
+项目描述:
+
+	1. 文件夹描述
+
+		DataSource (数据源文件夹)
+			|- DosORM (Dos.ORM文件夹[第三方ORM框架])
+
+		GrainService (谷粒服务文件夹)
+
+		GrainState (谷粒状态文件夹)
+
+		LogManagement (日志管理文件夹)
+
+

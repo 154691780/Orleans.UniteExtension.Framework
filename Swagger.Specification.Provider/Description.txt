@@ -1,0 +1,22 @@
+﻿
+作者: 蓝调大仙(blueghost.chn)
+
+联系: blueghost.chn@qq.com
+
+/*********************************
+
+
+项目细节:
+
+	1. 安装程序集
+		Install-Package Newtonsoft.Json -Version 9.0.1
+
+/*********************************
+
+
+项目描述:
+
+	1. 文件夹描述
+
+		SwaggerSpecification (Swagger规范文件夹)
+

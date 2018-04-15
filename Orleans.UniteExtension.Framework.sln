@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrleansMiddleware", "OrleansMiddleware", "{FCEF7E60-16D7-481A-9142-08F72B25B984}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrleansService", "OrleansService", "{F78C371D-F0A7-4354-9325-26F9B1AF785F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ORMImplement", "ORMImplement", "{61AB1B1A-5911-4557-9C93-BD4699638D04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceFiles", "ReferenceFiles", "{360CD62E-EFD7-4B74-A796-A349D3A8D507}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OwinImplement", "OwinImplement", "{FE120B1F-B7D8-48F3-B744-F50D7F553613}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SwaggerImplement", "SwaggerImplement", "{D55CB53F-98E5-4764-AAC5-856BE670A312}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnifiedData", "UnifiedData", "{975760B5-2156-4401-8B5B-18D820766A17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnifiedToolkit", "UnifiedToolkit", "{1B1A7981-07E3-4CD4-98A6-385DA4DDC6DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ResourceFiles", "ResourceFiles", "{EE7F99F8-277F-4B0E-8EE6-0B8E39851365}"
+	ProjectSection(SolutionItems) = preProject
+		ResourceFiles\Orleans.ico = ResourceFiles\Orleans.ico
+		ResourceFiles\Orleans_Logo_128.png = ResourceFiles\Orleans_Logo_128.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{E0758B9C-4A19-42E6-A0BF-BE22B594322E}"
+	ProjectSection(SolutionItems) = preProject
+		Description.txt = Description.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orleans.UniteExtension.Framework.Interfaces", "Orleans.UniteExtension.Framework.Interfaces\Orleans.UniteExtension.Framework.Interfaces.csproj", "{4F5F0F2E-414E-465A-B84E-60EA04E54D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orleans.UniteExtension.Framework.Implements", "Orleans.UniteExtension.Framework.Implements\Orleans.UniteExtension.Framework.Implements.csproj", "{1B8F1073-718B-4AFC-AC29-05CE6E84857A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orleans.UniteExtension.Framework.SiloService", "Orleans.UniteExtension.Framework.SiloService\Orleans.UniteExtension.Framework.SiloService.csproj", "{C9B15946-63CB-4106-A347-054E69919C01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonlyUsed.Toolkit", "CommonlyUsed.Toolkit\CommonlyUsed.Toolkit.csproj", "{BF42EE65-F2D7-418F-A609-E59FEB79E818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swagger.Assembly.Attributes", "Swagger.Assembly.Attributes\Swagger.Assembly.Attributes.csproj", "{D2880D30-778A-4C44-AABD-B23E053CCE3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swagger.Specification.Provider", "Swagger.Specification.Provider\Swagger.Specification.Provider.csproj", "{F67CDD38-78AB-4146-9DB3-643D2D83DE79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F5F0F2E-414E-465A-B84E-60EA04E54D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5F0F2E-414E-465A-B84E-60EA04E54D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5F0F2E-414E-465A-B84E-60EA04E54D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5F0F2E-414E-465A-B84E-60EA04E54D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B8F1073-718B-4AFC-AC29-05CE6E84857A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B8F1073-718B-4AFC-AC29-05CE6E84857A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B8F1073-718B-4AFC-AC29-05CE6E84857A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B8F1073-718B-4AFC-AC29-05CE6E84857A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B15946-63CB-4106-A347-054E69919C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B15946-63CB-4106-A347-054E69919C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B15946-63CB-4106-A347-054E69919C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B15946-63CB-4106-A347-054E69919C01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF42EE65-F2D7-418F-A609-E59FEB79E818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF42EE65-F2D7-418F-A609-E59FEB79E818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF42EE65-F2D7-418F-A609-E59FEB79E818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF42EE65-F2D7-418F-A609-E59FEB79E818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2880D30-778A-4C44-AABD-B23E053CCE3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2880D30-778A-4C44-AABD-B23E053CCE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2880D30-778A-4C44-AABD-B23E053CCE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2880D30-778A-4C44-AABD-B23E053CCE3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F67CDD38-78AB-4146-9DB3-643D2D83DE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F67CDD38-78AB-4146-9DB3-643D2D83DE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F67CDD38-78AB-4146-9DB3-643D2D83DE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F67CDD38-78AB-4146-9DB3-643D2D83DE79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F5F0F2E-414E-465A-B84E-60EA04E54D20} = {FCEF7E60-16D7-481A-9142-08F72B25B984}
+		{1B8F1073-718B-4AFC-AC29-05CE6E84857A} = {FCEF7E60-16D7-481A-9142-08F72B25B984}
+		{C9B15946-63CB-4106-A347-054E69919C01} = {F78C371D-F0A7-4354-9325-26F9B1AF785F}
+		{BF42EE65-F2D7-418F-A609-E59FEB79E818} = {1B1A7981-07E3-4CD4-98A6-385DA4DDC6DA}
+		{D2880D30-778A-4C44-AABD-B23E053CCE3A} = {D55CB53F-98E5-4764-AAC5-856BE670A312}
+		{F67CDD38-78AB-4146-9DB3-643D2D83DE79} = {D55CB53F-98E5-4764-AAC5-856BE670A312}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3B8BD76-BFBA-4278-A94C-D537EFB02166}
+	EndGlobalSection
+EndGlobal

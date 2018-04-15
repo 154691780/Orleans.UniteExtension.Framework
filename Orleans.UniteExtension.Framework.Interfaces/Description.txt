@@ -1,0 +1,30 @@
+﻿
+作者: 蓝调大仙(blueghost.chn)
+
+联系: blueghost.chn@qq.com
+
+/*********************************
+
+
+项目细节:
+
+	1. 安装程序集
+		Install-Package Microsoft.Orleans.OrleansCodeGenerator.Build -Version 1.5.2
+
+/*********************************
+
+
+项目描述:
+
+	1. 文件夹描述
+
+		GrainInterfaces (谷粒接口文件夹)
+
+		GrainState (谷粒状态文件夹)
+
+		Models (数据模型文件夹)
+			|- OutputParams (输出参数)
+
+		SwaggerParamExamples (Swagger参数例子文件夹)
+
+

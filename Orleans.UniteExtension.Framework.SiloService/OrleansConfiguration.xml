@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OrleansConfiguration xmlns="urn:orleans">
+  <Globals>
+    <!--<SystemStore SystemStoreType="ZooKeeper"
+                 DeploymentId="ZKDeploymentId"
+                 DataConnectionString="10.21.8.244:2181"/>-->
+    <!--<Networking Address="10.21.8.244" Port="30100" />-->
+    <!--<ProxyingGateway Address="10.21.8.244" Port="30101" />-->
+
+    <SeedNode Address="127.0.0.1" Port="11111" />
+
+    <Messaging ResponseTimeout="300s" />
+
+    <BootstrapProviders>
+      <Provider Type="OrleansHttp.Bootstrap" Name="OrleansWebApi" Host="127.0.0.1" Port="9186" Username="VerificationAccount" Password="888888"
+                ExcludedMeans="Login;LoginSysAccount;" SafComm="" Certifcate="CertificateFiles\GrLionWebSite.pfx" CertifcatePW="MTIzNDU2Nzg" ClCerreQuired="false"
+                IsOAuthVerify="true" OAuthUrl="http://10.21.10.96:9999/auth/oauth/check_token"/>
+      <!--<Provider Type="YaoQ.GrLion.Silos.Service.AppBootstrapper.AccountOnlineStatusServiceBootstrapProvider" Name="AOSService" />-->
+    </BootstrapProviders>
+
+    <StorageProviders>
+      <!--<Provider Type="Orleans.Storage.MemoryStorage" Name="AccountGrainStore"/>-->
+      <!--<Provider Type="Orleans.StorageProviders.RedisStorage" Name="RedisStore" RedisConnectionString="127.0.0.1:6379,abortConnect=false,ssl=true,password=<yourkey>" UseJsonFromat="true" DatabaseNumber="1"/>-->
+    </StorageProviders>
+    <!--<StreamProviders>
+      <Provider Type="Orleans.Providers.Streams.SimpleMessageStream.SimpleMessageStreamProvider" Name="SMSProvider" PubSubType="ImplicitOnly"/>
+    </StreamProviders>-->
+    <!--<StreamProviders>
+      <Provider Type="Orleans.RabbitMQStreamProvider.PersistentStreams.RabbitMQueueStreamProvider" DataConnectionString="null" Name="RabbitMQueueStreamProvider"/>
+    </StreamProviders>-->
+  </Globals>
+
+  <Defaults>
+    <Tracing DefaultTraceLevel="Info" TraceToConsole="true" TraceToFile="{0}-{1}.log" PropagateActivityId="false" BulkMessageLimit="1000">
+      <TraceLevelOverride LogPrefix="Application" TraceLevel="Info" />
+    </Tracing>
+    <Statistics MetricsTableWriteInterval="30s" PerfCounterWriteInterval="30s" LogWriteInterval="300s" WriteLogStatisticsToTable="true" StatisticsCollectionLevel="Info" />
+
+    <Networking Address="127.0.0.1" Port="11111" />
+    <ProxyingGateway Address="127.0.0.1" Port="30000" />
+
+  </Defaults>
+  <!--<Override Node="node1">
+    <Networking Address="127.0.0.1" Port="22222" />
+    <ProxyingGateway Address="127.0.0.1" Port="40000" />
+  </Override>
+  <Override Node="node2">
+    <Networking Address="127.0.0.1" Port="22222" />
+    <ProxyingGateway Address="127.0.0.1" Port="40000" />
+  </Override>-->
+</OrleansConfiguration>

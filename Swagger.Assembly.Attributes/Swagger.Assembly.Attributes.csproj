@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2880D30-778A-4C44-AABD-B23E053CCE3A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Swagger.Assembly.Attributes</RootNamespace>
+    <AssemblyName>Swagger.Assembly.Attributes</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonlyUsedEnum\HttpAccessMode.cs" />
+    <Compile Include="CommonlyUsedEnum\MIMEType.cs" />
+    <Compile Include="CommonlyUsedEnum\ParametersInEnum.cs" />
+    <Compile Include="CommonlyUsedEnum\SecurityDefinitionsTypeEnum.cs" />
+    <Compile Include="CommonlyUsedEnum\SecurityDefInTypeEnum.cs" />
+    <Compile Include="CommonlyUsedEnum\SecuritySchemeFlowEnum.cs" />
+    <Compile Include="CommonlyUsedEnum\SecuritySchemeTypeEnum.cs" />
+    <Compile Include="ExampleProviders\IExamplesProvider.cs" />
+    <Compile Include="ExtendedAttribute\ConsumesAttribute.cs" />
+    <Compile Include="ExtendedAttribute\HttpAccessModeAttribute.cs" />
+    <Compile Include="ExtendedAttribute\MethodDescAttribute.cs" />
+    <Compile Include="ExtendedAttribute\MethodParametersAttribute.cs" />
+    <Compile Include="ExtendedAttribute\MethodResponsesAttribute.cs" />
+    <Compile Include="ExtendedAttribute\MethodUniteParameAttribute.cs" />
+    <Compile Include="ExtendedAttribute\ParametersExampleAttribute.cs" />
+    <Compile Include="ExtendedAttribute\ProducesAttribute.cs" />
+    <Compile Include="ExtendedAttribute\RouteAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Description.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonlyUsed.Toolkit\CommonlyUsed.Toolkit.csproj">
+      <Project>{bf42ee65-f2d7-418f-a609-e59feb79e818}</Project>
+      <Name>CommonlyUsed.Toolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
