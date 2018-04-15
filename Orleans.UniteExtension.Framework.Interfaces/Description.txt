@@ -19,6 +19,7 @@
 	1. 文件夹描述
 
 		GrainInterfaces (谷粒接口文件夹)
+			|- SampleInterfaces (样本接口)
 
 		GrainState (谷粒状态文件夹)
 

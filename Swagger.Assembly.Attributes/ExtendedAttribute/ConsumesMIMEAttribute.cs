@@ -8,12 +8,19 @@ using CommonlyUsed.Toolkit;
 
 namespace Swagger.Assembly.Attributes.ExtendedAttribute
 {
+    /// <summary>
+    /// 消费MIME类型特性
+    /// </summary>
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = true, Inherited = true)]
-    public class ConsumesAttribute : Attribute
+    public class ConsumesMIMEAttribute : Attribute
     {
-        public MIMEType[] Consumes { get; set; }
+        public MIMETypeEnum[] Consumes { get; private set; }
 
-        public ConsumesAttribute(params MIMEType[] m_Consumes)
+        /// <summary>
+        /// 消费MIME类型特性
+        /// </summary>
+        /// <param name="m_Consumes">消费MIME类型数组</param>
+        public ConsumesMIMEAttribute(params MIMETypeEnum[] m_Consumes)
         {
             this.Consumes = m_Consumes;
         }
@@ -25,12 +32,16 @@ namespace Swagger.Assembly.Attributes.ExtendedAttribute
             m_Return.Append("[");
             foreach (var m_Item in Consumes)
             {
-                //m_Return.AppendFormat("\"application/{0}\",", m_Item);
                 m_Return.AppendFormat("\"{0}\",", m_Item.GetEnumDescription());
             }
             m_Return.Append("]");
 
             return m_Return.ToString();
+        }
+
+        public string ToJsonString()
+        {
+            return this.ToString();
         }
     }
 }

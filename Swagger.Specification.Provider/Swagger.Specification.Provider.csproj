@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GenerationDocFactory.cs" />
     <Compile Include="GenerationServiceProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SwaggerSpecification\SwaggerExternalDocsStruct.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="SwaggerSpecification\SwaggerParametersStruct.cs" />
     <Compile Include="SwaggerSpecification\SwaggerPathsOperationObjectStruct.cs" />
     <Compile Include="SwaggerSpecification\SwaggerPathsStruct.cs" />
+    <Compile Include="SwaggerSpecification\SwaggerPrimaryStruct.cs" />
     <Compile Include="SwaggerSpecification\SwaggerResponsesStruct.cs" />
     <Compile Include="SwaggerSpecification\SwaggerSecurityDefinitionsStruct.cs" />
     <Compile Include="SwaggerSpecification\SwaggerTagsStruct.cs" />

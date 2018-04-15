@@ -12,13 +12,31 @@ namespace CommonlyUsed.Toolkit
     public static class DictionaryHelper
     {
         /// <summary>
+        /// 尝试将键和值添加到字典中
+        /// <para>不存在: 添加,返回true;</para>
+        /// <para>存在: 不添加,返回false;</para>
+        /// <para>不抛导常</para>
+        /// </summary>
+        public static bool ExtendedTryAdd<TKey, TValue>(this IDictionary<TKey, TValue> m_Dicy, TKey m_Key, TValue m_Value)
+        {
+            if (m_Dicy.ContainsKey(m_Key) == false)
+            {
+                m_Dicy.Add(m_Key, m_Value);
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
         /// 尝试将键和值添加到字典中：如果不存在，才添加；存在，不添加也不抛导常
         /// </summary>
-        public static IDictionary<TKey, TValue> TryAdd<TKey, TValue>(this IDictionary<TKey, TValue> dict, TKey key, TValue value)
+        public static IDictionary<TKey, TValue> ExtendedTryAdd2<TKey, TValue>(this IDictionary<TKey, TValue> dict, TKey key, TValue value)
         {
             if (dict.ContainsKey(key) == false) dict.Add(key, value);
             return dict;
         }
+
         /// <summary>
         /// 将键和值添加或替换到字典中：如果不存在，则添加；存在，则替换
         /// </summary>

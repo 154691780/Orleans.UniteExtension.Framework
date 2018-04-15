@@ -12,8 +12,11 @@ namespace Swagger.Assembly.Attributes.CommonlyUsedEnum
     /// </summary>
     public enum SecuritySchemeFlowEnum : uint
     {
+        /// <summary>
+        /// password
+        /// </summary>
         [Description("password")]
-        password = 0,
+        Password = 0,
 
         /// <summary>
         /// implicit
@@ -21,10 +24,16 @@ namespace Swagger.Assembly.Attributes.CommonlyUsedEnum
         [Description("implicit")]
         Implicit = 1,
 
+        /// <summary>
+        /// application
+        /// </summary>
         [Description("application")]
-        application = 2,
+        Application = 2,
 
+        /// <summary>
+        /// accessCode
+        /// </summary>
         [Description("accessCode")]
-        accessCode = 3,
+        AccessCode = 3,
     }
 }

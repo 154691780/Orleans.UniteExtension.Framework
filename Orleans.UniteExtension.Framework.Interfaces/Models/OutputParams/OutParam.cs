@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Swagger.Assembly.Attributes.CommonlyUsedEnum;
+using Swagger.Assembly.Attributes.ExtendedAttribute;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +12,7 @@ namespace Orleans.UniteExtension.Framework.Interfaces.Models.OutputParams
     /// 标准输出对象
     /// </summary>
     [Serializable]
+    [UniteParam(UniteParamDirectionEnum.Out, typeof(OutParam), typeof(OutParam))]
     public class OutParam
     {
         /// <summary>

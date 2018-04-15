@@ -40,23 +40,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommonlyUsedEnum\HttpAccessMode.cs" />
-    <Compile Include="CommonlyUsedEnum\MIMEType.cs" />
+    <Compile Include="CommonlyUsedEnum\HttpModeEnum.cs" />
+    <Compile Include="CommonlyUsedEnum\MIMETypeEnum.cs" />
     <Compile Include="CommonlyUsedEnum\ParametersInEnum.cs" />
     <Compile Include="CommonlyUsedEnum\SecurityDefinitionsTypeEnum.cs" />
     <Compile Include="CommonlyUsedEnum\SecurityDefInTypeEnum.cs" />
     <Compile Include="CommonlyUsedEnum\SecuritySchemeFlowEnum.cs" />
     <Compile Include="CommonlyUsedEnum\SecuritySchemeTypeEnum.cs" />
+    <Compile Include="CommonlyUsedEnum\UniteParamDirectionEnum.cs" />
     <Compile Include="ExampleProviders\IExamplesProvider.cs" />
-    <Compile Include="ExtendedAttribute\ConsumesAttribute.cs" />
-    <Compile Include="ExtendedAttribute\HttpAccessModeAttribute.cs" />
-    <Compile Include="ExtendedAttribute\MethodDescAttribute.cs" />
-    <Compile Include="ExtendedAttribute\MethodParametersAttribute.cs" />
+    <Compile Include="ExtendedAttribute\ConsumesMIMEAttribute.cs" />
+    <Compile Include="ExtendedAttribute\HttpModeAttribute.cs" />
+    <Compile Include="ExtendedAttribute\MethodParamDescriptionAttribute.cs" />
+    <Compile Include="ExtendedAttribute\MethonDetailAttribute.cs" />
+    <Compile Include="ExtendedAttribute\MethodUniteOutParamAttribute.cs" />
     <Compile Include="ExtendedAttribute\MethodResponsesAttribute.cs" />
-    <Compile Include="ExtendedAttribute\MethodUniteParameAttribute.cs" />
+    <Compile Include="ExtendedAttribute\MethodUniteInParamAttribute.cs" />
     <Compile Include="ExtendedAttribute\ParametersExampleAttribute.cs" />
-    <Compile Include="ExtendedAttribute\ProducesAttribute.cs" />
+    <Compile Include="ExtendedAttribute\ProducesMIMEAttribute.cs" />
+    <Compile Include="ExtendedAttribute\RefVersionAttribute.cs" />
     <Compile Include="ExtendedAttribute\RouteAttribute.cs" />
+    <Compile Include="ExtendedAttribute\TagsAttribute.cs" />
+    <Compile Include="ExtendedAttribute\UniteParamAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

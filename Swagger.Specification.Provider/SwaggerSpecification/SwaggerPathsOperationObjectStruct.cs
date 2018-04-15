@@ -13,7 +13,7 @@ namespace Swagger.Specification.Provider.SwaggerSpecification
         /// <summary>
         /// get, put, post, delete, options, head, patch
         /// </summary>
-        public HttpAccessMode OperationType { get; set; }
+        public HttpModeEnum OperationType { get; set; }
         public string[] tags { get; set; }
         public string summary { get; set; }
         public string description { get; set; }

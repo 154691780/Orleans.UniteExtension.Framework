@@ -118,6 +118,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GrainInterfaces\Samples\SampleInterfaces.cs" />
+    <Compile Include="Models\InParams\InParam.cs" />
     <Compile Include="Models\OutputParams\OutParam.cs" />
     <Compile Include="Models\OutputParams\OutParamTransfer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -127,13 +129,22 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GrainInterfaces\" />
     <Folder Include="GrainState\" />
     <Folder Include="SwaggerParamExamples\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Description.txt" />
     <Content Include="orleans.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonlyUsed.Toolkit\CommonlyUsed.Toolkit.csproj">
+      <Project>{bf42ee65-f2d7-418f-a609-e59feb79e818}</Project>
+      <Name>CommonlyUsed.Toolkit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Swagger.Assembly.Attributes\Swagger.Assembly.Attributes.csproj">
+      <Project>{d2880d30-778a-4c44-aabd-b23e053cce3a}</Project>
+      <Name>Swagger.Assembly.Attributes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Orleans.OrleansCodeGenerator.Build.1.5.2\build\Microsoft.Orleans.OrleansCodeGenerator.Build.targets" Condition="Exists('..\packages\Microsoft.Orleans.OrleansCodeGenerator.Build.1.5.2\build\Microsoft.Orleans.OrleansCodeGenerator.Build.targets')" />

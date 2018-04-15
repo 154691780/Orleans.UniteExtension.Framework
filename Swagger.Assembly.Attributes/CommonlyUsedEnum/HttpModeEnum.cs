@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace Swagger.Assembly.Attributes.CommonlyUsedEnum
 {
-    public enum HttpAccessMode : uint
+    /// <summary>
+    /// Http请求模式枚举
+    /// </summary>
+    public enum HttpModeEnum : uint
     {
         /// <summary>
         /// get访问方式

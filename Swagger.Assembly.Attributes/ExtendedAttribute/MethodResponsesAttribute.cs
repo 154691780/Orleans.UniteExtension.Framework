@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Swagger.Assembly.Attributes.ExtendedAttribute
 {
     /// <summary>
-    /// 标记方法返回信息的标签
+    /// 方法返回Http编码特性
     /// </summary>
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = true, Inherited = true)]
     public class MethodResponsesAttribute : Attribute
@@ -16,11 +16,18 @@ namespace Swagger.Assembly.Attributes.ExtendedAttribute
         public string Description { get; set; }
         public string Schema { get; set; }
 
-        public MethodResponsesAttribute(string m_Description, string m_Schema, string m_RespCode = "default")
+        /// <summary>
+        /// 方法返回Http编码特性
+        /// </summary>
+        /// <param name="m_RespCode">
+        /// 返回Http编码
+        /// <para>http://www.runoob.com/http/http-status-codes.html</para>
+        /// </param>
+        /// <param name="m_Description">返回描述</param>
+        public MethodResponsesAttribute(string m_RespCode = "default", string m_Description = "")
         {
             this.RespCode = m_RespCode;
             this.Description = m_Description;
-            this.Schema = m_Schema;
         }
     }
 }
