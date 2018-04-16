@@ -1,0 +1,43 @@
+﻿
+作者: 蓝调大仙(blueghost.chn)
+
+联系: blueghost.chn@qq.com
+
+/*********************************
+
+
+项目细节:
+
+	1. 安装程序集
+		Install-Package Microsoft.Orleans.Core -Version 1.5.2
+		Install-Package Microsoft.Orleans.OrleansCodeGenerator -Version 1.5.2
+
+		Install-Package Owin -Version 1.0.0
+
+		Install-Package Microsoft.Owin -Version 3.1.0
+		Install-Package Microsoft.Owin.zh-Hans -Version 3.1.0 (当前未安装,只做记载)
+
+		Install-Package Microsoft.Owin.Hosting -Version 3.1.0
+		Install-Package Microsoft.Owin.Hosting.zh-Hans -Version 3.1.0 (当前未安装,只做记载)
+
+		Install-Package Microsoft.Owin.FileSystems -Version 3.1.0
+
+		Install-Package Microsoft.Owin.StaticFiles -Version 3.1.0
+		Install-Package Microsoft.Owin.StaticFiles.zh-Hans -Version 3.1.0 (当前未安装,只做记载)
+
+		Install-Package Nowin -Version 0.26.0
+
+
+
+/*********************************
+
+
+项目描述:
+
+	1. 文件夹描述
+
+		Middlewares (中间件文件夹)
+
+
+
+

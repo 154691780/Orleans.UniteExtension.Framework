@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrleansMiddleware", "OrleansMiddleware", "{FCEF7E60-16D7-481A-9142-08F72B25B984}"
 EndProject
@@ -42,6 +42,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swagger.Assembly.Attributes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swagger.Specification.Provider", "Swagger.Specification.Provider\Swagger.Specification.Provider.csproj", "{F67CDD38-78AB-4146-9DB3-643D2D83DE79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Orleans", "Owin.Orleans\Owin.Orleans.csproj", "{AE27B4E7-0CF8-41D9-B4AE-A6B07540589F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +74,10 @@ Global
 		{F67CDD38-78AB-4146-9DB3-643D2D83DE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F67CDD38-78AB-4146-9DB3-643D2D83DE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F67CDD38-78AB-4146-9DB3-643D2D83DE79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE27B4E7-0CF8-41D9-B4AE-A6B07540589F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE27B4E7-0CF8-41D9-B4AE-A6B07540589F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE27B4E7-0CF8-41D9-B4AE-A6B07540589F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE27B4E7-0CF8-41D9-B4AE-A6B07540589F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +89,7 @@ Global
 		{BF42EE65-F2D7-418F-A609-E59FEB79E818} = {1B1A7981-07E3-4CD4-98A6-385DA4DDC6DA}
 		{D2880D30-778A-4C44-AABD-B23E053CCE3A} = {D55CB53F-98E5-4764-AAC5-856BE670A312}
 		{F67CDD38-78AB-4146-9DB3-643D2D83DE79} = {D55CB53F-98E5-4764-AAC5-856BE670A312}
+		{AE27B4E7-0CF8-41D9-B4AE-A6B07540589F} = {FE120B1F-B7D8-48F3-B744-F50D7F553613}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E3B8BD76-BFBA-4278-A94C-D537EFB02166}

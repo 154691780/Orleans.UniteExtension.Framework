@@ -13,7 +13,7 @@ namespace Swagger.Specification.Provider
     /// <summary>
     /// 生成服务供应商
     /// </summary>
-    public class GenerationServiceProvider //: IServiceProvider
+    public class GenerationDocProvider //: IServiceProvider
     {
         //public object GetService(Type serviceType)
         //{
@@ -22,9 +22,9 @@ namespace Swagger.Specification.Provider
 
         public static ConcurrentDictionary<string, MethodInfo> AssemblyMethodCacheDicy { get; private set; }
 
-        static GenerationServiceProvider()
+        static GenerationDocProvider()
         {
-            GenerationServiceProvider.AssemblyMethodCacheDicy = new ConcurrentDictionary<string, MethodInfo>();
+            GenerationDocProvider.AssemblyMethodCacheDicy = new ConcurrentDictionary<string, MethodInfo>();
         }
 
         public static void CreationAssemblyMethodCache(string m_AssemblyFullName)
@@ -55,7 +55,7 @@ namespace Swagger.Specification.Provider
 
         public static string GenerationDocument(string m_AssemblyFullName)
         {
-            foreach (var m_Item in GenerationServiceProvider.AssemblyMethodCacheDicy)
+            foreach (var m_Item in GenerationDocProvider.AssemblyMethodCacheDicy)
             {
 
             }
