@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Swagger.Specification.Provider;
+
 namespace Owin.Orleans
 {
     /// <summary>
@@ -35,6 +37,13 @@ namespace Owin.Orleans
                 ServerFactory = "Nowin",
                 Port = config.Properties.ContainsKey("Port") ? int.Parse(config.Properties["Port"]) : 9186,
             };
+
+            #region 生成Swagger文档
+
+            GenerationDocProvider.CreationAssemblyMethodCache("Orleans.UniteExtension.Framework.Interfaces.dll");
+            GenerationDocProvider.GenerationDocument(string.Empty);
+
+            #endregion
 
             this.OwinHost = WebApp.Start(m_StartOptions, app => new OwinServiceStartup(null).Configure(app));
 

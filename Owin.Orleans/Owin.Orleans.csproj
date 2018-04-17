@@ -172,6 +172,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonlyUsed.Toolkit\CommonlyUsed.Toolkit.csproj">
+      <Project>{bf42ee65-f2d7-418f-a609-e59feb79e818}</Project>
+      <Name>CommonlyUsed.Toolkit</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Swagger.Assembly.Attributes\Swagger.Assembly.Attributes.csproj">
       <Project>{d2880d30-778a-4c44-aabd-b23e053cce3a}</Project>
       <Name>Swagger.Assembly.Attributes</Name>

@@ -61,6 +61,9 @@
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Nowin, Version=0.26.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nowin.0.26.0\lib\net45\Nowin.dll</HintPath>
+    </Reference>
     <Reference Include="Orleans, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Orleans.Core.1.5.2\lib\net461\Orleans.dll</HintPath>
     </Reference>
@@ -189,11 +192,27 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Description.txt" />
-    <Content Include="OrleansConfiguration.xml" />
+    <Content Include="OrleansConfiguration.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Orleans.UniteExtension.Framework.Implements\Orleans.UniteExtension.Framework.Implements.csproj">
+      <Project>{1b8f1073-718b-4afc-ac29-05ce6e84857a}</Project>
+      <Name>Orleans.UniteExtension.Framework.Implements</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orleans.UniteExtension.Framework.Interfaces\Orleans.UniteExtension.Framework.Interfaces.csproj">
+      <Project>{4f5f0f2e-414e-465a-b84e-60ea04e54d20}</Project>
+      <Name>Orleans.UniteExtension.Framework.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Owin.Orleans\Owin.Orleans.csproj">
+      <Project>{ae27b4e7-0cf8-41d9-b4ae-a6b07540589f}</Project>
+      <Name>Owin.Orleans</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Orleans.OrleansHost.1.5.2\build\Microsoft.Orleans.OrleansHost.targets" Condition="Exists('..\packages\Microsoft.Orleans.OrleansHost.1.5.2\build\Microsoft.Orleans.OrleansHost.targets')" />

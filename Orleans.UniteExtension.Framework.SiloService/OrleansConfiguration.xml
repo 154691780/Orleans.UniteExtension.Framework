@@ -12,7 +12,7 @@
     <Messaging ResponseTimeout="300s" />
 
     <BootstrapProviders>
-      <Provider Type="Orleans.Owin.OrleansBootstrapOwinProvider" Name="OrleansOwinService" Host="127.0.0.1" Port="9186" Username="VerificationAccount" Password="888888"
+      <Provider Type="Owin.Orleans.OrleansBootstrapOwinProvider" Name="OrleansOwinService" Host="127.0.0.1" Port="9186" Username="VerificationAccount" Password="888888"
                 ExcludedMeans="Login;LoginSysAccount;" SafComm="false" Certifcate="CertificateFiles\GrLionWebSite.pfx" CertifcatePW="MTIzNDU2Nzg" ClCerreQuired="false"
                 IsOAuthVerify="true" OAuthUrl="http://10.21.10.96:9999/auth/oauth/check_token"/>
       <!--<Provider Type="YaoQ.GrLion.Silos.Service.AppBootstrapper.AccountOnlineStatusServiceBootstrapProvider" Name="AOSService" />-->

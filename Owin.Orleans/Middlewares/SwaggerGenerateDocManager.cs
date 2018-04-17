@@ -22,5 +22,13 @@ namespace Owin.Orleans.Middlewares
             Console.WriteLine("SwaggerGenerateDocManager End.");
             await Next.Invoke(context);
         }
+
+
+        public static Task SwaggerGenerateDoc(IOwinContext context, Func<Task> func)
+        {
+            Console.WriteLine("UrlPath: {0}", context.Request.Path);
+
+            return func();
+        }
     }
 }

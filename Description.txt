@@ -19,6 +19,7 @@ Orleans.UniteExtension.Framework解决方案说明文档
 		ORMImplement (ORM实施项目)
 
 		OwinImplement (Owin实施项目)
+			2. Owin.Swagger.GenerateDoc (Owin Swagger 生成文档)
 
 		ReferenceFiles (引用到的文件)
 

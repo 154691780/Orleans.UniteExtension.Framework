@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using Owin.Swagger.GenerateDoc;
+using System.Collections.Concurrent;
 
 namespace Owin.Orleans
 {
@@ -14,6 +16,8 @@ namespace Owin.Orleans
     {
         public IDictionary<string, object> ConfigDicty { get; private set; }
 
+        //public static ConcurrentDictionary<string, System.Reflection.MethodInfo> RouterMapMethodCacheDicy { get; private set; }
+
         public OwinServiceStartup(IDictionary<string, object> m_ConfigDicty)
         {
             this.ConfigDicty = m_ConfigDicty;
@@ -23,7 +27,8 @@ namespace Owin.Orleans
         {
             //app.UseCors(CorsOptions.AllowAll);
 
-            // SwaggerGenerateDocManager
+            //app.Use(Middlewares.SwaggerGenerateDocManager.SwaggerGenerateDoc);
+            //app.UseSwaggerGenerateDoc();    // 生成Swagger文档
         }
     }
 }

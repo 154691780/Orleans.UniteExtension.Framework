@@ -13,10 +13,11 @@
 		Install-Package Dos.ORM.MySql -Version 1.1.7
 		Install-Package Microsoft.Orleans.Server -Version 1.5.2
 		Install-Package RedisStorage -Version 1.0.15
+		Install-Package Nowin  -Version 0.26.0
 
 		Owin 1.0.0
 		Microsoft.Owin 3.1.0
-		Nowin 0.26.0
+		
 
 /*********************************
 
