@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ResourceFiles", "ResourceFi
 	ProjectSection(SolutionItems) = preProject
 		ResourceFiles\Orleans.ico = ResourceFiles\Orleans.ico
 		ResourceFiles\Orleans_Logo_128.png = ResourceFiles\Orleans_Logo_128.png
+		ResourceFiles\Toolkit_128.png = ResourceFiles\Toolkit_128.png
+		ResourceFiles\Toolkit_64.ico = ResourceFiles\Toolkit_64.ico
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{E0758B9C-4A19-42E6-A0BF-BE22B594322E}"
